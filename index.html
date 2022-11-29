@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="shortcut icon" href="https://cache.marriott.com/Images/Mobile/MC_Logos/MarriottApple57x57.png">
+    <title>Gloritiel</title>
+</head>
+
+<body>
+    <div class="nav-toggler">
+        <span class="line-uno"></span>
+        <span class="line-duo"></span>
+        <span class="line-tres"></span>
+    </div>
+    <nav class="nav">
+        <div>
+            <a class='logo' href="#">Gloritiel</a>
+        </div>
+        <button class="dropbtn">Finds Hotel
+            <i class="fa fa-chevron-down"></i>
+            <div class="dropdown-content">
+                <a href="#">Bristol</a>
+                <a href="#">Mariot</a>
+                <a href="#">Polonia Palace Hotel</a>
+            </div>
+        </button>
+        </div>
+        <ul>
+            <li>
+                <a href="#">Location</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Contact</a>
+            </li>
+        </ul>
+        <button class="login-btn">Login</button>
+    </nav>
+    <main>
+        <section class="section-text">
+            <h1>Find most luxurious Hotels Across The Globe</h1>
+            <div class="trigger-modal" onclick="toggleModal()">
+                <button><i class=" fa fa-play" aria-hidden="true"></i>
+                </button>
+                <p>Watch Demo Video</p>
+                <div class="modal-container">
+                    <i class="fas fa-times close-btn"></i>
+                    <div class="modal">
+                        <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" width="800" height="400"
+                            type="text/html"
+                            src="https://www.youtube.com/embed/9I2xta0ahIs?autoplay=0&fs=0&iv_load_policy=3&showinfo=0&rel=0&cc_load_policy=0&start=0&end=0&origin=https://youtubeembedcode.com">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class="section-form">
+            <form name="myForm" class="myForm" action="">
+                <div class="input-group-location">
+                    <label for="location">Where you go?</label>
+                    <input type="text" name='location' id="location" placeholder='try "Pakistan"' required>
+                    <i class="fa fa-map-marker" aria-hidden="true"></i>
+                </div>
+                <div class="input-in">
+                    <label for="check-in">Check-in</label>
+                    <input type="month" id="check-in" name='check-in' value="2022-05" autocomplete="off">
+                </div>
+                <div class="check-out">
+                    <label for="check-out">Check-out</label>
+                    <input type="month" id="check-out" name='check-out' value="2022-05" autocomplete="off">
+                </div>
+                </div>
+                </div>
+                <div class="guest">
+                    <label for="guest">Guest</label>
+                    <input type="number" id="guest" name='guest' min="1" max="10" required>
+                    <div class="payCheck">
+                        <input type="checkbox" name="pay-check" id="pay_check" checked required />
+                        <label for="pay_check">Pay when checking in?</label>
+                    </div>
+                </div>
+                <div class="submitButton">
+                    <input type="submit" name="submit" value="Search Hotels" />
+                </div>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>
+            <i class="fa fa-map-marker" aria-hidden="true"></i>Mercurser Hotel, Austria
+        </p>
+    </footer>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>
