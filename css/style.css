@@ -10562,12 +10562,12 @@ a {
   text-decoration: none;
 }
 
-ul {
+.menu-list {
   list-style-type: none;
   display: flex;
   margin-right: 120px;
 }
-ul li {
+.menu-list li {
   list-style: none;
   display: inline-block;
   padding: 0 30px;
@@ -10774,6 +10774,7 @@ footer p i {
 
 @media screen and (max-width: 1200px) {
   body {
+    max-width: 700px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -10804,21 +10805,21 @@ footer p i {
     opacity: 1;
     box-sizing: border-box;
     border: 1px solid white;
-    top: 58px;
-    width: 100%;
+    top: 42px;
+    width: 88%;
     left: 2px;
     z-index: 2;
   }
   .nav.open .dropbtn:focus .dropdown-content {
     display: block;
   }
-  .nav.open ul {
+  .nav.open .menu-list {
     margin-left: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  .nav.open ul li {
+  .nav.open .menu-list li {
     margin-bottom: 20px;
   }
   .nav.open .login-btn {
@@ -10826,28 +10827,45 @@ footer p i {
   }
   .nav-toggler {
     display: inline-block;
-    top: 15px;
-    left: 10px;
+    top: 0px;
+    left: 15px;
     text-align: center;
     height: 40px;
     width: 40px;
     z-index: 1;
   }
   main {
+    max-width: 400px;
     flex-direction: column;
   }
   main .close-btn {
     right: 5%;
     top: 20%;
   }
+  main .section-text {
+    margin: 20px;
+    white-space: wrap;
+  }
+  main .section-text .modal iframe {
+    max-width: 400px;
+    max-height: 400px;
+  }
+  main .section-text h1 {
+    width: 90%;
+    font-size: 40px;
+  }
   main .section-form {
-    flex: 100%;
-    margin: 20px 80px;
-    min-width: 100px;
+    margin: 0 10px;
+    width: auto;
+    height: auto;
   }
   main .section-form input[type=checkbox]:checked:after {
-    top: 44%;
-    left: 39%;
+    top: 41%;
+  }
+  main .section-form input {
+    margin-top: 0;
+    font-size: 14px;
+    padding: 10px 10px;
   }
   footer p {
     display: inline-block;

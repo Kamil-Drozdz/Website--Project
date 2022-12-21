@@ -119,7 +119,7 @@ a {
 	color: $primary-color;
 	text-decoration: none;
 }
-ul {
+.menu-list {
 	list-style-type: none;
 	display: flex;
 	margin-right: 120px;
@@ -335,6 +335,7 @@ footer {
 
 @media screen and (max-width: 1200px) {
 	body {
+		max-width: 700px;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
@@ -365,8 +366,8 @@ footer {
 		opacity: 1;
 		box-sizing: border-box;
 		border: 1px solid $primary-color;
-		top: 58px;
-		width: 100%;
+		top: 42px;
+		width: 88%;
 		left: 2px;
 		z-index: 2;
 		.dropbtn {
@@ -376,7 +377,7 @@ footer {
 				}
 			}
 		}
-		ul {
+		.menu-list {
 			margin-left: 20px;
 			display: flex;
 			flex-direction: column;
@@ -391,26 +392,44 @@ footer {
 	}
 	.nav-toggler {
 		display: inline-block;
-		top: 15px;
-		left: 10px;
+		top: 0px;
+		left: 15px;
 		text-align: center;
 		height: 40px;
 		width: 40px;
 		z-index: 1;
 	}
 	main {
+		max-width: 400px;
 		.close-btn {
 			right: 5%;
 			top: 20%;
 		}
 		flex-direction: column;
+		.section-text {
+			margin: 20px;
+			white-space: wrap;
+			.modal iframe {
+				max-width: 400px;
+				max-height: 400px;
+			}
+			h1 {
+				width: 90%;
+				font-size: 40px;
+			}
+		}
 		.section-form {
-			flex: 100%;
-			margin: 20px 80px;
-			min-width: 100px;
+			margin: 0 10px;
+			width: auto;
+			height: auto;
+
 			input[type='checkbox']:checked:after {
-				top: 44%;
-				left: 39%;
+				top: 41%;
+			}
+			input {
+				margin-top: 0;
+				font-size: 14px;
+				padding: 10px 10px;
 			}
 		}
 	}
