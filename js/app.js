@@ -1,12 +1,12 @@
-const modal = document.querySelector('.modal-container');
+const modalPopup = document.querySelector('.modal-container');
 const errorMessage = document.querySelectorAll('.errorValid');
 function toggleModal() {
-	modal.classList.toggle('show-modal');
+	modalPopup.classList.toggle('show-modal');
 }
 
-const form = document.querySelector('.myForm');
+const entireForm = document.querySelector('.myForm');
 
-form.addEventListener('submit', e => {
+entireForm.addEventListener('submit', e => {
 	e.preventDefault();
 	checkInputs();
 	console.log('Przesyłam formularz');
@@ -51,10 +51,10 @@ function setSuccessFor() {
 	console.log('Wartość inputa uzupełniona');
 }
 
-const navLinks = document.querySelector('.nav');
-const toggleNav = document.querySelector('.nav-toggler');
+const navbarLinks = document.querySelector('.nav');
+const navbarToggle = document.querySelector('.nav-toggler');
 
-toggleNav.addEventListener('click', () => {
-	navLinks.classList.toggle('open');
-	toggleNav.classList.toggle('is-active');
+navbarToggle.addEventListener('click', () => {
+	navbarLinks.classList.toggle('open');
+	navbarToggle.classList.toggle('is-active');
 });
