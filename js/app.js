@@ -53,7 +53,6 @@ function setSuccessFor() {
 
 const navLinks = document.querySelector('.nav');
 const toggleNav = document.querySelector('.nav-toggler');
-const links = document.querySelectorAll('.nav li');
 
 toggleNav.addEventListener('click', () => {
 	navLinks.classList.toggle('open');

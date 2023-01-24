@@ -10565,7 +10565,6 @@ a {
 ul {
   list-style-type: none;
   display: flex;
-  margin-right: 120px;
 }
 ul li {
   list-style: none;
@@ -10587,7 +10586,6 @@ ul li {
 main {
   display: flex;
   flex-direction: row;
-  width: 800px;
 }
 main .section-text {
   color: white;
@@ -10657,13 +10655,10 @@ main .modal {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  max-width: 100%;
 }
 main .section-form {
-  margin-top: 15%;
-  margin-left: 55%;
-  width: auto;
-  height: auto;
+  margin-top: 5%;
+  margin-left: 13%;
   background: rgba(243, 237, 237, 0.2);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
@@ -10813,10 +10808,10 @@ footer p i {
     display: block;
   }
   .nav.open ul {
-    margin-left: 20px;
+    width: 250px;
+    align-items: flex-start;
     display: flex;
     flex-direction: column;
-    justify-content: center;
   }
   .nav.open ul li {
     margin-bottom: 20px;
@@ -10842,8 +10837,6 @@ footer p i {
   }
   main .section-form {
     flex: 100%;
-    margin: 20px 80px;
-    min-width: 100px;
   }
   main .section-form input[type=checkbox]:checked:after {
     top: 44%;
@@ -10851,5 +10844,26 @@ footer p i {
   }
   footer p {
     display: inline-block;
+  }
+}
+@media screen and (max-width: 768px) {
+  main .section-text h1 {
+    width: 80%;
+    font-size: 40px;
+  }
+  main .section-form {
+    margin: auto 5%;
+  }
+  main .section-form input {
+    width: 85%;
+    font-size: 12px;
+    padding: 10px 15px;
+  }
+  main .section-form form {
+    margin: auto 10%;
+    text-align: center;
+  }
+  main .section-form form i {
+    right: 15%;
   }
 }/*# sourceMappingURL=style.css.map */
